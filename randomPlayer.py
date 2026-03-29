@@ -5,7 +5,7 @@ import random
 # sensible, you should use that instead of the random player.
 class RandomPlayer:
 	
-    # Your coursework player is always player 1 and so the random player will always be player 2.
+    # The random player is used as a baseline opponent for testing the AI.
     # You can specify a seed for the random number generation so that you can test with a consistent environment.
     # If you want to seed the player differently each time, you can use something like the following (in
     # runGame)

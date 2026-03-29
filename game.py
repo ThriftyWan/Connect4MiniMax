@@ -4,12 +4,12 @@ import board
 class Game:
 
     # Store the players and create a board with the given specification
-    # IMPORTANT: Note that the coursework player is always player 1 (and so always goes first)
-	def __init__(self, cwPlayer, player2, rows, columns, winNum):
-		self.player1 = cwPlayer
+	# player1 is the AI player and always goes first
+	def __init__(self, aiPlayer, player2, rows, columns, winNum):
+		self.player1 = aiPlayer
 		self.player2 = player2
 		self.gameBoard = board.Board(rows, columns, winNum)
-		self.listOfPlayers = (cwPlayer, player2)
+		self.listOfPlayers = (aiPlayer, player2)
 
     # Play the game itself, with or without alpha-beta pruning according to whether the pruning
     # argument is true or false respectively.
